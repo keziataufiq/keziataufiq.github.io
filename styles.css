@@ -197,14 +197,10 @@ section {
     text-align: center;
 }
 
-.section__text__p1 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-}
-
 .section__text__p2 {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 1.2rem;
 }
 
 
@@ -229,7 +225,7 @@ section {
 
 /* BUTTONS */
 
-.btn-container {
+/* .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -250,3 +246,7 @@ section {
 .btn-color-1:hover {
     cursor: pointer;
 }
+
+.btn-container {
+    gap: 1rem;
+} */
