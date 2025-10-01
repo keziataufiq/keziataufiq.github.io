@@ -32,3 +32,7 @@ Just open `index.html` and `visualizations.html` in a browser.
 - Home: `index.html`
 - Visuals: `visualizations.html`
 
+## Resources
+For the base of the portfolio, this tutorial was followed: 
+https://www.youtube.com/watch?v=ldwlOzRvYOU
+
