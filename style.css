@@ -368,6 +368,42 @@ article .icon {
     height: 2.5rem;
 }
 
+/* VISUALIZATION SECTION */
+
+.container { 
+    max-width: 70ch; 
+    margin: 0 auto; 
+    padding: 0 1rem; 
+}
+
+.card {
+  background: var(--card);
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: calc(var(--space) * 1.25);
+  margin: 2rem ;
+  box-shadow: var(--shadow);
+}
+
+.lead { 
+    font-size: 1.1rem; 
+}
+
+.muted { 
+    color: var(--muted); 
+}
+
+.viz-wrap { 
+    width: 100%; 
+    overflow: auto; 
+    padding: 0.5rem; 
+    background: var(--bg); 
+    border: 1px dashed var(--border); 
+    border-radius: var(--radius); 
+}
+
+
 /* FOOTER SECTION */
 
 footer {
@@ -378,3 +414,5 @@ footer {
 footer p {
     text-align: center;
 }
+
+

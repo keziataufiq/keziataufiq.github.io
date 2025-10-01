@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <script defer src="vis.js"></script>
+    </head>
+    <body>
+        <header>
+             <nav id="desktop-nav">
+                <div class="logo">Kezia Taufiq</div>
+                <div>
+                    <ul class="nav-links">
+                       <li><a href="index.html">About</a></li>
+                       <li><a href="index.html">Projects</a></li>
+                       <li><a href="visualizations.html">Visualizations</a></li>
+                       <li><a href="index.html">Contact</a></li>  
+                    </ul>
+                </div>        
+            </nav>
+             <nav id="hamburger-nav">
+                <div class="logo">Kezia Taufiq</div>  
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                       <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+                       <li><a href="index.html" onclick="toggleMenu()">Projects</a></li>
+                       <li><a href="visualizations.html" onclick="toggleMenu()">Visualizations</a></li>
+                       <li><a href="index.html" onclick="toggleMenu()">Contact</a></li>                          
+                    </div>
+                </div>
+             </nav>          
+        </header>
+            <main class="container" id="main">
+                <section class="card">
+                <h1>Visualization Portfolio</h1>
+                <p class="lead">All visuals below are generated with JavaScript and SVG.</p>
+                </section>
+
+                <section class="card">
+                <h2>1) SVG Bar Chart</h2>
+                <p class="muted">An example of a simple visualization with axes, labels, and tooltips.</p>
+                <div id="chart" class="viz-wrap" aria-label="Bar chart: skill levels"></div>
+                </section>
+
+                <section class="card">
+                <h2>2) Creative SVG Art</h2>
+                <p class="muted">Random Circle Grid using JS + SVG.</p>
+                <div id="art" class="viz-wrap" aria-label="Generative SVG art"></div>
+                </section>
+            </main>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                       <li><a href="index.html">About</a></li>
+                       <li><a href="index.html">Projects</a></li>
+                       <li><a href="visualizations.html">Visualizations</a></li>
+                       <li><a href="index.html">Contact</a></li>  
+                    </ul>
+                </div>
+            </nav>
+            <p class="copyright__p">Copyright &#169; 2025 Kezia Taufiq</p>
+        </footer>
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>
