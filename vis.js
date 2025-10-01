@@ -115,4 +115,5 @@ function mount(selector, width = 700, height = 360) {
       svg.appendChild(circle);
     }
   }
+
 })();
