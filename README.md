@@ -17,7 +17,7 @@ README.md
 - `visualizations.html`: Two JS-driven SVG visuals:
   1. Bar chart (favorite color)
   2. Random circle grid (creative art)
-- `style.css`: Responsive, accessible styling using rem/% units.
+- `style.css`: Responsive and accessible styling using rem/% units.
 - `main.js`: Hamburger menu toggle.
 - `vis.js`: SVG helper functions + both visualizations.
 
@@ -25,28 +25,26 @@ README.md
 Just open `index.html` and `visualizations.html` in a browser.
 
 ## Deploy (GitHub Pages)
-1. Create repo named `yourusername.github.io`.
+1. Create repo named 'keziataufiq.github.io'.
 2. Commit these files to the root of the repo.
-3. Visit `https://yourusername.github.io`.
+3. Visit `https://keziataufiq.github.io/`.
 
 ## Navigation
 1. **Homepage (`index.html`):**
    - Navigate to the homepage to learn more about me. The homepage includes details of my educational background, recent professional experience, skills and tools I am familiar with, and contact details.
    - There are sections for skills, work experience, and links to other relevant resources like my GitHub page.
-- Visuals: `visualizations.html`
-   - This page features two main visualizations:
-    1. Bar chart of favorite color among 20 year olds
-    2. Random circle grid
+2. **Visuals: (`visualizations.html`):**
+   This page features two main visualizations:
+   - Bar chart of favorite color among 20 year olds
+   - Random circle grid
 
 ## Resources
 For the base of the portfolio, this tutorial was followed: 
-- https://www.youtube.com/watch?v=ldwlOzRvYOU
+1. https://www.youtube.com/watch?v=ldwlOzRvYOU
 
 For the visualizations, these tutorials were followed: 
-    1. Bar chart
-    - https://clementbenezech.hashnode.dev/creating-a-bar-chart-component-with-svg-and-javascript
-    2. Random circle grid
-    - https://dev.to/madsstoumann/svg-circle-pattern-generator-2g6g?utm_source
+1. Bar chart: https://clementbenezech.hashnode.dev/creating-a-bar-chart-component-with-svg-and-javascript
+2. Random circle grid: https://dev.to/madsstoumann/svg-circle-pattern-generator-2g6g?utm_source
 
 
 
