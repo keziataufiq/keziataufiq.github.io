@@ -1,0 +1,104 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --page-max: 1100px;
+  --card-border: #e5e5e5;
+  --muted: #666;
+  --pad: 16px;
+  --gap: 20px;
+}
+
+/* LAYOUT */
+
+body {
+    margin: 0; 
+    font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1.5;
+    color: #000;;
+}
+
+main {
+    max-width: var(--page-max);
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.container { 
+    max-width: 70ch; 
+    margin: 0 auto; 
+    padding: 0 1rem; 
+}
+
+/* TYPOGRAPHY */
+
+h1, h2 {
+    margin-bottom: 0.3rem;
+}
+
+p, ul {
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+em {
+    color: grey;
+}
+
+/* CARDS & GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--gap);
+}
+
+.card {
+    border: 1px solid #e5e5e5;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+code {
+    background: #f6f6f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* ===== Vega / Embeds ===== */
+.vega-embed, .vega-embed > * {
+    display: block;
+    max-width: 100%;
+}
+
+#vis1, #vis2, #vis3, #vis4 {
+  min-height: 260px; /* prevents layout jump while loading */
+}
+
+/* If your site header is fixed, give the page room */
+header.is-fixed {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+}
+main.with-header-offset {
+  margin-top: 80px;          /* adjust to your header height */
+}
+
+/* Optional: responsive grid that collapses nicely */
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.grid > * { min-width: 0; } /* grid items can shrink correctly */

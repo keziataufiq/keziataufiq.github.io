@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignment 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../mediaqueries.css">
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script> -->
+    <script>
+     const options = {
+        config: {
+          // Vega-Lite default configuration
+        },
+        // init: (view) => {
+        //   // initialize tooltip handler
+        //   view.tooltip(new vegaTooltip.Handler().call);
+        // },
+        view: {
+          // view constructor options
+          // remove the loader if you don't want to default to vega-datasets!
+          loader: vega.loader({
+            baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/",
+          }),
+          renderer: "canvas",
+        },
+      };
+
+      // register vega and vega-lite with the API
+      // vl.register(vega, vegaLite, options);
+      vl.register(vega, vegaLite);
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">Kezia Taufiq</div>
+          <div>
+            <ul class="nav-links">
+              <li><a href="../index.html">About</a></li>
+              <li><a href="../index.html">Projects</a></li>
+              <li><a href="../visualizations.html">Visualizations</a></li>
+              <li><a href="index.html">Vega-Lite</a></li>
+              <li><a href="../index.html">Contact</a></li>  
+            </ul>
+          </div>        
+      </nav>
+        <nav id="hamburger-nav">
+          <div class="logo">Kezia Taufiq</div>  
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul class="menu-links">
+                <li><a href="../index.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="../index.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="../visualizations.html" onclick="toggleMenu()">Visualizations</a></li>
+                <li><a href="../index.html" onclick="toggleMenu()">Contact</a></li>                          
+              </ul>
+            </div>
+        </nav>          
+    </header> 
+
+    <main>
+      <h1>Assignment 3</h1>
+
+      <!-- Describing the dataset -->
+      <section class="card">
+        <h2>Dataset Description</h2>
+            <p> This dataset contains video game sales. Each row provides details of a game with attributes such as 'name', 'platform',
+              'year', 'genre', and 'publisher'. For every game there is also numeric sales fields (in millions of units) alongside details of 
+              'sales region' and amount.</p>
+
+        <h3>Variables & Data Types</h3>
+        <ul>
+          <li><strong>Name</strong> — <em>categorical (nominal)</em></li>
+          <li><strong>Platform</strong> — <em>categorical (nominal)</em></li>
+          <li><strong>Year</strong> — <em>ordinal/quantitative</em></li>
+          <li><strong>Genre</strong> — <em>categorical (nominal)</em></li>
+          <li><strong>Publisher</strong> — <em>categorical (nominal)</em></li>
+          <li><strong>NA_Sales, EU_Sales, JP_Sales, Other_Sales, Global_Sales</strong> — <em>quantitative</em></li>
+        </ul>
+      </section>
+
+      <!-- Visualization 1 -->
+      <section class="card">
+        <h2>Visualization 1: Global Sales by Genre and Platform</h2>
+        <p>Grouped bar chart to see a comparison in Global Sales by Genre and Platform</p>
+        <div id="vis1"></div>
+      </section>
+
+      <!-- Visualization 2 -->
+      <section class="card">
+        <h2>Visualization 2: Sales Over Time by Platform and Genre</h2>
+        <p>Multi-line chart bar chart for each Platform's yearly sales trend per Genre</p>
+        <div id="vis2"></div>
+      </section>
+
+      <!-- Visualization 3 -->
+      <section class="card">
+        <h2>Visualization 3: Regional Sales vs. Platform</h2>
+        <p>Grouped bar chart to see a comparison of each Platform's sales per Region</p>
+        <div id="vis3"></div>
+      </section>
+
+      <!-- Visualization 4 -->
+      <section class="card">
+        <h2>Visualization 4: Regional Sales vs. Genre</h2>
+        <p>Heatmap for regional diversity in Genre</p>
+        <div id="vis4"></div>
+      </section>
+
+    </main>
+    <script src="./vis.js"></script>
+  </body>
+</html>
+
